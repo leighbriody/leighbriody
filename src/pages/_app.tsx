@@ -25,7 +25,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     import("preline");
   }, []);
   return (
-    <main className={`${vietnam.className} font-sans text-blue-300`}>
+    <main className={`${vietnam.className} bg-primary font-sans text-blue-300`}>
       <SessionProvider session={session}>
         <Component {...pageProps} />
       </SessionProvider>

@@ -16,6 +16,10 @@ export default {
         accentblue: "#5A8DEE",
         accentorange: "#FDAC41",
         accentyellow: "#FEDD49",
+        fungray: "#7b89a8",
+        funpink: "#00c7ff",
+
+        
       },
       spacing: {
         130: "27rem",
