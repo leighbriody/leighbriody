@@ -10,7 +10,7 @@ export function ProjectsHero() {
         <div></div>
         <div>
           <h2 className="text-2xl tracking-tight text-white">
-            Take a look at some of my favourite projects.
+            Take a look at some of my favourite projects..
           </h2>
         </div>
         <div className="mt-4 h-2 w-full bg-secondary"></div>
