@@ -305,3 +305,15 @@ span:nth-child(9) {
 }
 
 
+.list-item-style::before {
+  content: "";
+  position: absolute;
+  left: -8px; /* Adjust the positioning of the triangle as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #4299e1; /* Replace #4299e1 with your desired blue color */
+}

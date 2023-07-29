@@ -9,7 +9,7 @@ interface ProjectProp {
 
 export function ProjectCard(project: ProjectProp) {
   return (
-    <div className="group flex h-full flex-col rounded-xl bg-primary shadow-sm">
+    <div className="group mb-10 flex h-full flex-col rounded-xl bg-primary shadow-sm">
       <div className="border-fun-gray flex h-60 flex-col items-center justify-center rounded-xl border border-fungray p-2 transition hover:-translate-y-2 hover:border-funpink hover:opacity-75">
         <Image
           src={project.project.imageUrl}

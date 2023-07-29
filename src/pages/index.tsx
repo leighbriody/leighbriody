@@ -1,3 +1,4 @@
+import { Experience } from "~/components/Experience/Experience";
 import { Hero } from "~/components/Hero";
 import { ProjectsGrid } from "~/components/Projects/ProjectsGrid";
 import { ProjectsHero } from "~/components/Projects/ProjectsHero";
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsetGrid></SkillsetGrid>
       <ProjectsHero></ProjectsHero>
       <ProjectsGrid></ProjectsGrid>
+      <Experience></Experience>
     </>
   );
 }
