@@ -4,7 +4,7 @@ import { ViewProjectsGlowButton } from "./ViewProjectsGlowButton";
 
 export function Hero() {
   return (
-    <div >
+    <div  className="banner">
       <header className="z-50 flex w-full flex-wrap  py-3 text-xl sm:flex-nowrap sm:justify-start sm:py-0">
         <nav
           className="relative mx-auto w-full max-w-7xl px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
@@ -16,7 +16,7 @@ export function Hero() {
               href="#"
               aria-label="Brand"
             >
-              Leigh Briodys
+              Leigh Briodyss
             </a>
             <div className="sm:hidden">
               <button
@@ -181,7 +181,7 @@ export function Hero() {
 
             <p className="mb-6 max-w-2xl font-bold text-primary dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               Full Stack Software Engineer With A Passion For Building New And
-              Exciting Software.Always Working On New Projects & Ideas.
+              Exciting Software.Always Working On New Projects & Ideas.....
             </p>
 
             <a

@@ -1,8 +1,8 @@
-// import { Experience } from "~/components/Experience/Experience";
+import { Experience } from "~/components/Experience/Experience";
 import { Hero } from "~/components/Hero";
-// import { ProjectsGrid } from "~/components/Projects/ProjectsGrid";
-// import { ProjectsHero } from "~/components/Projects/ProjectsHero";
-// import { SkillsetGrid } from "~/components/SkillsetGrid";
+import { ProjectsGrid } from "~/components/Projects/ProjectsGrid";
+import { ProjectsHero } from "~/components/Projects/ProjectsHero";
+import { SkillsetGrid } from "~/components/SkillsetGrid";
 
 export default function Home() {
   return (
@@ -10,10 +10,10 @@ export default function Home() {
       {/* <Header></Header> */}
       <Hero></Hero>
       {/* <SkillsetHero></SkillsetHero> */}
-      {/* <SkillsetGrid></SkillsetGrid>
+      <SkillsetGrid></SkillsetGrid>
       <ProjectsHero></ProjectsHero>
       <ProjectsGrid></ProjectsGrid>
-      <Experience></Experience> */}
+      <Experience></Experience>
     </>
   );
 }
