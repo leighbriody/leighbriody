@@ -1,21 +1,35 @@
 import { useState } from "react";
 import Image from "next/image";
+import { ExperienceList } from "./ExperienceList";
+import {
+  cloudComputingExperience,
+  computerScienceExperience,
+  type ExperienceItem,
+  propylonExperience,
+  experienceData,
+} from "~/data/projects";
 
 export function Experience() {
   const [selectedItem, setSelectedItem] = useState<number>(0);
+  const [selectedExperience, setSelectedExperience] =
+    useState<ExperienceItem>(propylonExperience);
 
-  const handleItemClick = (index: number) => {
+  const handleItemClick = (index: number, item: string) => {
     setSelectedItem(index);
+    if (item === "Associate Software Engineer") {
+      setSelectedExperience(propylonExperience);
+    }
+
+    if (item === "Cloud Computing Level 8") {
+      setSelectedExperience(cloudComputingExperience);
+    }
+
+    if (item === "Computer Science") {
+      setSelectedExperience(computerScienceExperience);
+    }
   };
 
-  const experienceData = [
-    { title: "Associate Software Engineer", role: "Propylon" },
-    {
-      title: "Cloud Computing Level 8",
-      role: "Dundalk Institute of Technology",
-    },
-    { title: "Computer Science", role: "Dundalk Institute of Technology" },
-  ];
+  
 
   return (
     <div className="mx-auto grid max-w-screen-xl grid-cols-2 py-8">
@@ -27,7 +41,7 @@ export function Experience() {
           alt="planet"
           className="ml-18 float rounded-xl"
         ></Image>
-        <h2 className="float font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-b from-secondary to-white">
+        <h2 className="float bg-gradient-to-b from-secondary to-white bg-clip-text text-4xl font-extrabold text-transparent">
           Experience
         </h2>
         <h2 className="text-2xl font-light tracking-tight text-white">
@@ -37,7 +51,7 @@ export function Experience() {
           {experienceData.map((item, index) => (
             <li
               key={index}
-              onClick={() => handleItemClick(index)}
+              onClick={() => handleItemClick(index, item.title)}
               className={`${
                 selectedItem === index ? "text-blue-500" : "text-white"
               }`}
@@ -49,63 +63,7 @@ export function Experience() {
         </ul>
       </div>
       <div>
-        {/* here I want to show a bullet point list explaing my experience for each one*/}
-        <ul className="mt-8 space-y-4 text-white ">
-          <li className="relative pl-4 ">
-            <h3 className="mb-2 text-xl font-medium text-white">
-              Associate Software Engineer @ Propylon
-            </h3>
-            <p className="font-light">August 2022 - August 2023</p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">
-              Helped develop software for government solutions side of the
-              company , worked with both frontend and backend to help build and
-              deploy testable code.
-            </p>
-          </li>
-        </ul>
+        <ExperienceList experience={selectedExperience}></ExperienceList>
       </div>
     </div>
   );
