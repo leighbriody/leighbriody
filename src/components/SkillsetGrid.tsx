@@ -9,7 +9,7 @@ export function SkillsetGrid() {
         <section>
           <div className="mx-auto grid max-w-screen-xl grid-cols-2 px-4 py-8">
             <div className="max-w-screen-lg text-white">
-              <h2 className="mb-4 text-4xl tracking-tight text-gray-900 dark:text-white">
+              <h2 className="mb-4 text-4xl tracking-tight text-white">
                 Skillset
               </h2>
             </div>

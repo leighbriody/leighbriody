@@ -12,7 +12,7 @@ export function Hero() {
         >
           <div className="flex items-center justify-between">
             <a
-              className="flex-none text-xl font-semibold dark:text-white"
+              className="flex-none text-xl font-semibold text-white"
               href="#"
               aria-label="Brand"
             >
@@ -178,7 +178,7 @@ export function Hero() {
               </div>
             </h2>
 
-            <p className="mb-6 max-w-2xl font-bold text-primary dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="mb-6 max-w-2xl font-bold text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               Highly skilled and motivated Full Stack Software Engineer, driven
               by a genuine passion for crafting exceptional Full Stack
               applications that provide value.
@@ -186,13 +186,13 @@ export function Hero() {
 
             <a
               href="#"
-              className="mr-3 inline-flex items-center justify-center mb-5"
+              className="mr-3 inline-flex items-center justify-center"
             >
               <SpaceButton></SpaceButton>
             </a>
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-2 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              className="inline-flex items-center justify-center rounded-lg border  border-gray-700 px-5 py-2 text-center text-base font-medium  text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-800"
             >
               Download CV
             </a>

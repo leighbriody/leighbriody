@@ -7,19 +7,19 @@ interface ExperienceListProps {
 export function ExperienceList(experience: ExperienceListProps) {
   return (
     <ul className="mt-8 space-y-4 text-white ">
-      <li className="relative pl-4 ">
-        <h3 className="mb-2 text-xl font-medium text-white">
+      <li className="relative pl-4">
+        <h3 className="mb-2 text-2xl font-semibold text-white">
           {experience.experience.title}
         </h3>
-        <p className="font-light">{experience.experience.dates}</p>
+        <p className="font-light text-textsecondary">
+          {experience.experience.dates}
+        </p>
       </li>
 
-      {experience.experience.bulletPoints.map((experience) => (
-        <>
-          <li className="list-item-style relative pl-4">
-            <p className="font-light">{experience}</p>
-          </li>
-        </>
+      {experience.experience.bulletPoints.map((experience, index) => (
+        <li key={index} className="list-item-style relative pl-4">
+          <p className="font-light">{experience}</p>
+        </li>
       ))}
     </ul>
   );

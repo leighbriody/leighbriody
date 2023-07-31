@@ -30,7 +30,7 @@ export function Experience() {
   };
 
   return (
-    <div className="mx-auto max-w-screen-xl py-8 px-4">
+    <div className="mx-auto max-w-screen-xl px-4 py-8">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
           <Image
@@ -38,7 +38,7 @@ export function Experience() {
             width={200}
             height={200}
             alt="planet"
-            className="md:ml-18 mx-auto rounded-xl"
+            className="mx-auto rounded-xl sm:ml-20"
           />
           <h2 className="float mt-4 bg-gradient-to-b from-secondary to-white bg-clip-text text-4xl font-extrabold text-transparent">
             Experience
