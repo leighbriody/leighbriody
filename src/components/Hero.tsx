@@ -4,7 +4,7 @@ import { ViewProjectsGlowButton } from "./ViewProjectsGlowButton";
 
 export function Hero() {
   return (
-    <div className="banner">
+    <div >
       <header className="z-50 flex w-full flex-wrap  py-3 text-xl sm:flex-nowrap sm:justify-start sm:py-0">
         <nav
           className="relative mx-auto w-full max-w-7xl px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
