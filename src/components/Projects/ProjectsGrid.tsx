@@ -11,6 +11,9 @@ export function ProjectsGrid() {
           </>
         ))}
       </div>
+      <div className="text-center mt-10">
+        <h1>Pssst.. you can view more less impresive projects here</h1>
+      </div>
     </div>
   );
 }

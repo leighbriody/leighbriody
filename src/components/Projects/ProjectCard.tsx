@@ -37,10 +37,10 @@ export function ProjectCard(project: ProjectProp) {
         </p>
       </div>
 
-      <div className="mt-5 grid grid-cols-5">
+      <div className="mt-5 flex flex-wrap gap-2">
         {project.project.projectTechStack.map((techStackitem) => (
           <>
-            <div className="mt-2">
+            <div className="mr-0 mt-2">
               <Pill name={techStackitem}></Pill>
             </div>
           </>

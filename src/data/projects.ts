@@ -82,13 +82,14 @@ export const projects: Project[] = [
     projectLiveUrl: "http://www.assetbrainai.com",
     projectGithubUrl: "https://github.com/leighbriody/icon-generator",
     projectTechStack: [
-      "react",
-      "node",
-      "express",
-      "mongo",
-      "tailwind",
-      "aws s3",
-      "stripe",
+      "Next.js",
+      "TypeScript",
+      "tRPC",
+      "Prisma",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "AWS S3",
+      "Stripe",
     ],
   },
   {
@@ -98,42 +99,31 @@ export const projects: Project[] = [
       "Online web application to help users understand, test, and improve their code.",
     projectLiveUrl: "http://www.google.com",
     projectGithubUrl: "http://www.google.com",
-    projectTechStack: ["react", "node", "express", "mongo", "tailwind"],
+    projectTechStack: [
+      "Mongo DB",
+      "Express.js",
+      "React",
+      "Node",
+      "Tailwind",
+      "Typescript",
+    ],
   },
   {
-    imageUrl: "/project-images/codeninja.png",
-    projectName: "Code Ninja",
+    imageUrl: "/project-images/walkies.png",
+    projectName: "Walkies",
     projectDescription:
-      "Online web application to help users understand, test, and improve their code.",
-    projectLiveUrl: "http://www.google.com",
-    projectGithubUrl: "http://www.google.com",
-    projectTechStack: ["react", "node", "express", "mongo", "tailwind"],
-  },
-  {
-    imageUrl: "/project-images/codeninja.png",
-    projectName: "Code Ninja",
-    projectDescription:
-      "Online web application to help users understand, test, and improve their code.",
-    projectLiveUrl: "http://www.google.com",
-    projectGithubUrl: "http://www.google.com",
-    projectTechStack: ["react", "node", "express", "mongo", "tailwind"],
-  },
-  {
-    imageUrl: "/project-images/codeninja.png",
-    projectName: "Code Ninja",
-    projectDescription:
-      "Online web application to help users understand, test, and improve their code.",
-    projectLiveUrl: "http://www.google.com",
-    projectGithubUrl: "http://www.google.com",
-    projectTechStack: ["react", "node", "express", "mongo", "tailwind"],
-  },
-  {
-    imageUrl: "/project-images/codeninja.png",
-    projectName: "Code Ninja",
-    projectDescription:
-      "Online web application to help users understand, test, and improve their code.",
-    projectLiveUrl: "http://www.google.com",
-    projectGithubUrl: "http://www.google.com",
-    projectTechStack: ["react", "node", "express", "mongo", "tailwind"],
+      "Hybird On Demand Dog Walking Application - Find A Friendly Dog Walker Nearby",
+    projectLiveUrl: "https://testwalkies.web.app/landing-page",
+    projectGithubUrl:
+      "https://github.com/leighbriody/on-demand-dog-walking-app",
+    projectTechStack: [
+      "Ionic",
+      "Angular",
+      "Firebase",
+      "Typescript",
+      "Maps API",
+      "CSS",
+    ],
+    //add video URL https://www.linkedin.com/feed/update/urn:li:activity:6960223430805757953/
   },
 ];
