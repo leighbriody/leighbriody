@@ -186,7 +186,7 @@ export function Hero() {
 
             <a
               href="#"
-              className="mr-3 inline-flex items-center justify-center"
+              className="mr-3 inline-flex items-center justify-center mb-5"
             >
               <SpaceButton></SpaceButton>
             </a>

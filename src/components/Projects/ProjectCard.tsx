@@ -16,7 +16,7 @@ export function ProjectCard(project: ProjectProp) {
           width={500}
           height={500}
           alt="planet"
-          className="rounded-xl"
+          className="rounded-xl w-full h-full"
         ></Image>
       </div>
       <div className="">

@@ -15,7 +15,7 @@ export function SkillsetGrid() {
             </div>
             <div></div>
             <div>
-              <h2 className="text-2xl tracking-tight text-white font-light">
+              <h2 className="text-2xl font-light tracking-tight text-white">
                 Current technologies I am working with.
               </h2>
             </div>
@@ -32,8 +32,8 @@ export function SkillsetGrid() {
         </section>
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-4 lg:py-6">
-            <div className="max-w-screen-lg">
-              <div className="grid grid-cols-4 gap-4 md:grid-cols-5 md:gap-x-20 lg:gap-x-60 lg:gap-y-20">
+            <div className="max-w-screen-xl">
+              <div className="grid grid-cols-3 gap-4 md:grid-cols-5 md:gap-x-20 lg:grid-cols-7 lg:gap-x-20 lg:gap-y-20">
                 <div>
                   <SkillCard image="/react-star.png"></SkillCard>
                 </div>
@@ -90,6 +90,9 @@ export function SkillsetGrid() {
                 </div>
                 <div>
                   <SkillCard image="/redux.png"></SkillCard>
+                </div>
+                <div>
+                  <SkillCard image="/prisma.png"></SkillCard>
                 </div>
                 <div>
                   <SkillCard image="/prisma.png"></SkillCard>
