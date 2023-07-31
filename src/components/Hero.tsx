@@ -16,7 +16,7 @@ export function Hero() {
               href="#"
               aria-label="Brand"
             >
-              Leigh Briody
+              Leigh Briodys
             </a>
             <div className="sm:hidden">
               <button
