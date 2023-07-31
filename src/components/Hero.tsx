@@ -1,10 +1,10 @@
-import spaceman from "../../public/floating-spaceman.png";
+import spaceman from "../../public/hero-hero.png";
 import Image from "next/image";
-import { ViewProjectsGlowButton } from "./ViewProjectsGlowButton";
+import { SpaceButton } from "./SpaceButton/SpaceButton";
 
 export function Hero() {
   return (
-    <div  className="banner">
+    <div className="banner">
       <header className="z-50 flex w-full flex-wrap  py-3 text-xl sm:flex-nowrap sm:justify-start sm:py-0">
         <nav
           className="relative mx-auto w-full max-w-7xl px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
@@ -16,7 +16,7 @@ export function Hero() {
               href="#"
               aria-label="Brand"
             >
-              Leigh Briodyss
+              Leigh Briody
             </a>
             <div className="sm:hidden">
               <button
@@ -165,11 +165,10 @@ export function Hero() {
         </nav>
       </header>
       <section>
-        <div className="mx-auto mt-[-0px] grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+        <div className="mx-auto mt-20 grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-1xl font-poppins mb-4 text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-5xl">
               Hi There
-              {/* <span className="md:text-10xl ml-2 text-3xl sm:text-4xl">👋</span> */}
             </h1>
 
             <h2 className="mb-4 max-w-5xl text-6xl font-extrabold leading-none tracking-tight dark:text-white md:text-8xl xl:text-8xl">
@@ -180,15 +179,16 @@ export function Hero() {
             </h2>
 
             <p className="mb-6 max-w-2xl font-bold text-primary dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Full Stack Software Engineer With A Passion For Building New And
-              Exciting Software.Always Working On New Projects & Ideas.....
+              Highly skilled and motivated Full Stack Software Engineer, driven
+              by a genuine passion for crafting exceptional Full Stack
+              applications that provide value.
             </p>
 
             <a
               href="#"
               className="mr-3 inline-flex items-center justify-center"
             >
-              <ViewProjectsGlowButton></ViewProjectsGlowButton>
+              <SpaceButton></SpaceButton>
             </a>
             <a
               href="#"

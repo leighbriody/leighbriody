@@ -9,7 +9,7 @@ export function ProjectsHero() {
         </div>
         <div></div>
         <div>
-          <h2 className="text-2xl tracking-tight text-white">
+          <h2 className="text-2xl tracking-tight text-white font-light">
             Take a look at some of my favourite projects..
           </h2>
         </div>

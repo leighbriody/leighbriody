@@ -23,15 +23,14 @@ export const propylonExperience: ExperienceItem = {
     "Provided assistance and support to two new starters by helping them with their tickets and resolving any issues they encountered during their onboarding process. Played a key role in ensuring a smooth transition and facilitating their integration into the team.",
     "Perform daily code reviews, providing constructive feedback and promoting code quality within the team. Collaborate with colleagues to enhance code readability and maintainability.",
     "Demonstrated proficiency in Software Development best practices, implementing comprehensive unit tests using React Testing Library, Jest, and Pytest to ensure code quality and reliability, while validating functionality and maintaining a high level of software quality.",
-    "Collaborated closely with the UI/UX team, providing valuable technical insights and expertise to enhance and deliver seamless user experiences. Leveraged front-end technologies such as React, Material UI, and Tailwind CSS to implement UI designs effectively, ensuring optimal usability and visual appeal in our applications."
+    "Collaborated closely with the UI/UX team, providing valuable technical insights and expertise to enhance and deliver seamless user experiences. Leveraged front-end technologies such as React, Material UI, and Tailwind CSS to implement UI designs effectively, ensuring optimal usability and visual appeal in our applications.",
   ],
-  
 };
 
 export const cloudComputingExperience: ExperienceItem = {
   title: "Cloud Computong @ DKIT",
   dates: "Sep 2021 - May 2022",
-  bulletPoints:[
+  bulletPoints: [
     "Graduated with 1:1 Results",
     "Developed expertise in Cloud Architecture, AWS, and service-oriented architecture, enabling the design and implementation of scalable cloud solutions.",
     "Gained proficiency in Mobile Development and Angular, leading to the creation of responsive and interactive web applications.",
@@ -49,7 +48,7 @@ export const cloudComputingExperience: ExperienceItem = {
 export const computerScienceExperience: ExperienceItem = {
   title: "Computer Science@ Propylon",
   dates: "Aug 2022 - Current",
-  bulletPoints:  [
+  bulletPoints: [
     "BSC In Computing (QQ1 Level 7) Graduated June 2022 with a 2:1 from Dundalk Institute of Technology",
     "Graduated with a 2:1, showcasing a strong academic performance and dedication to learning.",
     "Developed a solid understanding of Object-Oriented Programming principles and design patterns.",
