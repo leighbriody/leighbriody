@@ -13,6 +13,7 @@ import { Be_Vietnam_Pro } from "next/font/google";
 const vietnam = Be_Vietnam_Pro({
   weight: ["900", "300"],
   subsets: ["latin"],
+  variable: "--font-vietnam",
 });
 
 const MyApp: AppType<{ session: Session | null }> = ({
@@ -25,7 +26,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     import("preline");
   }, []);
   return (
-    <main className={`${vietnam.className} bg-primary  text-blue-300`}>
+    <main className={`${vietnam.variable} font-sans bg-primary  text-blue-300`}>
       <SessionProvider session={session}>
         <Component {...pageProps} />
       </SessionProvider>
