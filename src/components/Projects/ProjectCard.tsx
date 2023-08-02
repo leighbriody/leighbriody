@@ -22,7 +22,7 @@ export function ProjectCard(project: ProjectProp) {
       <div className="">
         <div className="grid grid-cols-2">
           <div>
-            <h3 className="pt-8 text-xl text-white">
+            <h3 className="pt-8 text-xl text-white font-semibold">
               {project.project.projectName}
             </h3>
           </div>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       {/* <Header></Header> */}
-      <Hero></Hero>
+    <Hero></Hero>
       {/* <SkillsetHero></SkillsetHero> */}
       <SkillsetGrid></SkillsetGrid>
       <ProjectsHero></ProjectsHero>

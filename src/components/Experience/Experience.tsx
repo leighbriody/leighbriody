@@ -40,7 +40,7 @@ export function Experience() {
             alt="planet"
             className="mx-auto rounded-xl sm:ml-20"
           />
-          <h2 className="float mt-4 bg-gradient-to-b from-secondary to-white bg-clip-text text-4xl font-extrabold text-transparent">
+          <h2 className="float mt-4 bg-gradient-to-b from-secondary to-white bg-clip-text text-4xl text-transparent">
             Experience
           </h2>
           <h2 className="text-2xl font-light tracking-tight text-white">

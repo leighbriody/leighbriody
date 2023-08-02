@@ -8,7 +8,7 @@ export function ExperienceList(experience: ExperienceListProps) {
   return (
     <ul className="mt-8 space-y-4 text-white ">
       <li className="relative pl-4">
-        <h3 className="mb-2 text-2xl font-semibold text-white">
+        <h3 className="mb-2 text-2xl text-white">
           {experience.experience.title}
         </h3>
         <p className="font-light text-textsecondary">

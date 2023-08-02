@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { Be_Vietnam_Pro } from "next/font/google";
 
 const vietnam = Be_Vietnam_Pro({
-  weight: ["900","300"],
+  weight: ["900", "300"],
   subsets: ["latin"],
 });
 
