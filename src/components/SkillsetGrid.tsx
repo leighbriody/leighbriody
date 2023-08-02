@@ -2,6 +2,8 @@ import { SkillCard } from "./SkillCard/SkillCard";
 import Image from "next/image";
 import planet1 from "../../public/planet1.png";
 
+
+
 export function SkillsetGrid() {
   return (
     <div className="skillset-banner py-20">

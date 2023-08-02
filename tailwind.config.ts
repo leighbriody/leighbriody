@@ -5,6 +5,9 @@ export default {
   plugins: [require("preline/plugin")],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-vietn)"],
+      },
       colors: {
         primary: "#000A1F",
         secondary: "#02C7FF",
@@ -18,8 +21,6 @@ export default {
         accentyellow: "#FEDD49",
         fungray: "#7b89a8",
         funpink: "#00c7ff",
-
-        
       },
       spacing: {
         130: "27rem",

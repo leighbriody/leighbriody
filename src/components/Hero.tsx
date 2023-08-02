@@ -2,10 +2,18 @@ import spaceman from "../../public/hero-hero.png";
 import Image from "next/image";
 import { SpaceButton } from "./SpaceButton/SpaceButton";
 
-export function Hero() {
+interface MyComponentProps {
+  onClick: () => void;
+}
+
+export function Hero({ onClick }: MyComponentProps) {
+  function viewProjects() {
+    //how can I pass a click event to a child component
+    onClick();
+  }
   return (
     <div className="banner ">
-       <div className="sky">
+      <div className="sky">
         <div className="star"></div>
         <div className="star"></div>
         <div className="star"></div>
@@ -168,7 +176,7 @@ export function Hero() {
               </div>
             </h2>
 
-            <p className="mb-6 max-w-2xl font-bold text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="mb-6 max-w-2xl  text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               Highly skilled and motivated Full Stack Software Engineer, driven
               by a genuine passion for crafting exceptional Full Stack
               applications that provide value.
@@ -177,6 +185,7 @@ export function Hero() {
             <a
               href="#"
               className="mr-3 inline-flex items-center justify-center"
+              onClick={viewProjects}
             >
               <SpaceButton></SpaceButton>
             </a>
