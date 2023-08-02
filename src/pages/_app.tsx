@@ -11,8 +11,8 @@ import { useEffect } from "react";
 import { Be_Vietnam_Pro } from "next/font/google";
 
 const vietnam = Be_Vietnam_Pro({
-  weight: "900",
-  subsets: ["vietnamese"],
+  weight: ["900","300"],
+  subsets: ["latin"],
 });
 
 const MyApp: AppType<{ session: Session | null }> = ({
@@ -25,7 +25,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     import("preline");
   }, []);
   return (
-    <main className={`${vietnam.className} bg-primary font-sans text-blue-300`}>
+    <main className={`${vietnam.className} bg-primary  text-blue-300`}>
       <SessionProvider session={session}>
         <Component {...pageProps} />
       </SessionProvider>
