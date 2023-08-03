@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-vietn)"],
+        sans: ["var(--font-vietnam)"],
       },
       colors: {
         primary: "#000A1F",
