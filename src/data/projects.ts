@@ -46,11 +46,10 @@ export const cloudComputingExperience: ExperienceItem = {
 };
 
 export const computerScienceExperience: ExperienceItem = {
-  title: "Computer Science@ Propylon",
+  title: "Computer Science @ DKIT",
   dates: "Aug 2022 - Current",
   bulletPoints: [
     "BSC In Computing (QQ1 Level 7) Graduated June 2022 with a 2:1 from Dundalk Institute of Technology",
-    "Graduated with a 2:1, showcasing a strong academic performance and dedication to learning.",
     "Developed a solid understanding of Object-Oriented Programming principles and design patterns.",
     "Explored various web design patterns used in web development to create scalable and efficient applications.",
     "Learned best practices for developing secure software and protecting against common vulnerabilities.",
@@ -75,6 +74,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    imageUrl: "/project-images/simple-saas.png",
+    projectName: "Simple SaaS",
+    projectDescription:
+      "Next JS SaaS boilerplate to get you off the ground quicker",
+    projectLiveUrl: "https://boilerplate-saas-two.vercel.app/",
+    projectGithubUrl: "https://github.com/leighbriody/BoilerplateSaaS",
+    projectTechStack: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "Stripe",
+      "Daisy UI",
+      "Preline UI",
+    ],
+  },
+  {
     imageUrl: "/project-images/assetbrain.png",
     projectName: "Asset Brain AI",
     projectDescription:
@@ -90,22 +107,6 @@ export const projects: Project[] = [
       "NextAuth.js",
       "AWS S3",
       "Stripe",
-    ],
-  },
-  {
-    imageUrl: "/project-images/codeninja.png",
-    projectName: "Code Ninja",
-    projectDescription:
-      "Online web application to help users understand, test, and improve their code.",
-    projectLiveUrl: "http://www.google.com",
-    projectGithubUrl: "http://www.google.com",
-    projectTechStack: [
-      "Mongo DB",
-      "Express.js",
-      "React",
-      "Node",
-      "Tailwind",
-      "Typescript",
     ],
   },
   {
