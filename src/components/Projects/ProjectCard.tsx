@@ -3,6 +3,7 @@ import { Pill } from "../Pill/Pill";
 import { Launch } from "../Launch/Launch";
 import { Github } from "../Github/Github";
 import { type Project } from "~/data/projects";
+import { Video } from "../Video/Video";
 interface ProjectProp {
   project: Project;
 }
@@ -16,17 +17,20 @@ export function ProjectCard(project: ProjectProp) {
           width={500}
           height={500}
           alt="planet"
-          className="rounded-xl w-full h-full"
+          className="h-full w-full rounded-xl"
         ></Image>
       </div>
       <div className="">
         <div className="grid grid-cols-2">
           <div>
-            <h3 className="pt-8 text-xl text-white font-semibold">
+            <h3 className="pt-8 text-xl font-semibold text-white">
               {project.project.projectName}
             </h3>
           </div>
           <div className="pt-8">
+            {project.project.videoUrl && (
+              <Video href={project.project.videoUrl}></Video>
+            )}
             <Github href={project.project.projectGithubUrl}></Github>
 
             <Launch name="Live" href={project.project.projectLiveUrl}></Launch>

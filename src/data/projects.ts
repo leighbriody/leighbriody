@@ -70,6 +70,7 @@ export interface Project {
   projectLiveUrl: string;
   projectGithubUrl: string;
   projectTechStack: string[];
+  videoUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -125,6 +126,8 @@ export const projects: Project[] = [
       "Maps API",
       "CSS",
     ],
+    videoUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:6960223430805757953/",
     //add video URL https://www.linkedin.com/feed/update/urn:li:activity:6960223430805757953/
   },
 ];

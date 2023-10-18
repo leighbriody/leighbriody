@@ -71,11 +71,10 @@ export function Hero({ onClick }: MyComponentProps) {
           >
             <div className="mt-5 flex flex-col gap-x-0 gap-y-4 sm:mt-0 sm:flex-row sm:items-center sm:justify-end sm:gap-x-7 sm:gap-y-0 sm:pl-7">
               <a
-                className="font-medium text-blue-600 dark:text-blue-500 sm:py-6"
+                className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
                 href="#"
-                aria-current="page"
               >
-                Home
+                Skills
               </a>
               <a
                 className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
@@ -83,7 +82,12 @@ export function Hero({ onClick }: MyComponentProps) {
               >
                 Projects
               </a>
-
+              <a
+                className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
+                href="#"
+              >
+                Experience
+              </a>
               <div className="hs-dropdown [--adaptive:none] [--strategy:static] sm:py-4 sm:[--strategy:fixed] sm:[--trigger:hover]">
                 {/* <button type="button" className="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 ">
             Dropdown

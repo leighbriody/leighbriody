@@ -2,8 +2,6 @@ import { SkillCard } from "./SkillCard/SkillCard";
 import Image from "next/image";
 import planet1 from "../../public/planet1.png";
 
-
-
 export function SkillsetGrid() {
   return (
     <div className="skillset-banner py-20">
@@ -11,7 +9,7 @@ export function SkillsetGrid() {
         <section>
           <div className="mx-auto grid max-w-screen-xl grid-cols-2 px-4 py-8">
             <div className="max-w-screen-lg text-white">
-              <h2 className="mb-4 text-4xl tracking-tight text-white">
+              <h2 className="mb-4 text-4xl font-medium tracking-tight text-white">
                 Skillset
               </h2>
             </div>
@@ -61,7 +59,7 @@ export function SkillsetGrid() {
                   <SkillCard image="/git.png"></SkillCard>
                 </div>
                 <div>
-                  <SkillCard image="/firebaselogo.png"></SkillCard>
+                  <SkillCard image="/firebase-cropped.png"></SkillCard>
                 </div>
                 <div>
                   <SkillCard image="/jest.png"></SkillCard>
@@ -97,7 +95,7 @@ export function SkillsetGrid() {
                   <SkillCard image="/prisma.png"></SkillCard>
                 </div>
                 <div>
-                  <SkillCard image="/prisma.png"></SkillCard>
+                  <SkillCard image="/docker-cropped.png"></SkillCard>
                 </div>
               </div>
             </div>
