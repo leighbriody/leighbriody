@@ -13,13 +13,7 @@ export function Hero({ onClick }: MyComponentProps) {
   }
   return (
     <div className="banner ">
-      <div className="sky">
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-      </div>
+      <div className="sky"></div>
       <header className="z-50 flex w-full flex-wrap  py-3 text-xl sm:flex-nowrap sm:justify-start sm:py-0">
         <nav
           className="relative mx-auto w-full max-w-7xl px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
