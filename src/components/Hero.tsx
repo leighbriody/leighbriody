@@ -4,12 +4,21 @@ import { SpaceButton } from "./SpaceButton/SpaceButton";
 
 interface MyComponentProps {
   onClick: () => void;
+  onClickSkills: () => void;
+  onExperienceClicked: () => void;
 }
 
-export function Hero({ onClick }: MyComponentProps) {
+export function Hero({
+  onClick,
+  onClickSkills,
+  onExperienceClicked,
+}: MyComponentProps) {
   function viewProjects() {
-    //how can I pass a click event to a child component
     onClick();
+  }
+
+  function viewSkills() {
+    onClickSkills();
   }
   return (
     <div className="banner ">
@@ -21,7 +30,7 @@ export function Hero({ onClick }: MyComponentProps) {
         >
           <div className="flex items-center justify-between">
             <a
-              className="flex-none text-xl font-semibold text-white"
+              className="flex-none text-2xl font-semibold text-white"
               href="#"
               aria-label="Brand"
             >
@@ -67,29 +76,25 @@ export function Hero({ onClick }: MyComponentProps) {
               <a
                 className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
                 href="#"
+                onClick={viewSkills}
               >
                 Skills
               </a>
               <a
                 className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
                 href="#"
+                onClick={viewProjects}
               >
                 Projects
               </a>
               <a
                 className="font-medium text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 sm:py-6"
                 href="#"
+                onClick={onExperienceClicked}
               >
                 Experience
               </a>
               <div className="hs-dropdown [--adaptive:none] [--strategy:static] sm:py-4 sm:[--strategy:fixed] sm:[--trigger:hover]">
-                {/* <button type="button" className="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 ">
-            Dropdown
-            <svg className="ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
-          </button> */}
-
                 <div className="hs-dropdown-menu top-full z-10 hidden rounded-lg bg-white p-2 opacity-0 transition-[opacity,margin] duration-[0.1ms] before:absolute before:-top-5 before:left-0 before:h-5 before:w-full hs-dropdown-open:opacity-100 dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800 sm:w-48 sm:border sm:shadow-md sm:duration-[150ms] sm:dark:border">
                   <a
                     className="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
@@ -186,12 +191,6 @@ export function Hero({ onClick }: MyComponentProps) {
               onClick={viewProjects}
             >
               <SpaceButton></SpaceButton>
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center rounded-lg border  border-gray-700 px-5 py-2 text-center text-base font-medium  text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-800"
-            >
-              Download CV
             </a>
           </div>
           <div className="float hidden lg:col-span-5 lg:mt-0 lg:flex">

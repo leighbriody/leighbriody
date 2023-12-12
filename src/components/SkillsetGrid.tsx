@@ -9,14 +9,8 @@ export function SkillsetGrid() {
         <section>
           <div className="mx-auto grid max-w-screen-xl grid-cols-2 px-4 py-8">
             <div className="max-w-screen-lg text-white">
-              <h2 className="mb-4 text-4xl font-medium tracking-tight text-white">
+              <h2 className="mb-4 text-4xl tracking-tight text-white">
                 Skillset
-              </h2>
-            </div>
-            <div></div>
-            <div>
-              <h2 className="text-2xl font-light tracking-tight text-white">
-                Current technologies I am working with.
               </h2>
             </div>
             <div>
@@ -27,6 +21,11 @@ export function SkillsetGrid() {
                 alt="planet"
                 className="float-right"
               ></Image>
+            </div>
+            <div className="col-span-2">
+              <h2 className="text-2xl font-light tracking-tight text-white">
+                Some of the technologies I build with.
+              </h2>
             </div>
           </div>
         </section>

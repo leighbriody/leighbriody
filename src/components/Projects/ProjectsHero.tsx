@@ -3,13 +3,11 @@ export function ProjectsHero() {
     <section>
       <div className="mx-auto grid  max-w-screen-xl grid-cols-2 px-4 py-8">
         <div className="max-w-screen-lg text-white">
-          <h2 className="mb-4 text-4xl tracking-tight text-white">
-            Projects
-          </h2>
+          <h2 className="mb-4 text-4xl tracking-tight text-white">Projects</h2>
         </div>
         <div></div>
-        <div>
-          <h2 className="text-2xl tracking-tight text-white font-light">
+        <div className="col-span-2">
+          <h2 className=" text-2xl font-light tracking-tight text-white">
             Take a look at some of my favourite projects..
           </h2>
         </div>
