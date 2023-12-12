@@ -3,11 +3,13 @@ import Image from "next/image";
 import { ExperienceList } from "./ExperienceList";
 import {
   cloudComputingExperience,
+  propylonMidlevelExperience,
   computerScienceExperience,
   type ExperienceItem,
   propylonExperience,
   experienceData,
 } from "~/data/projects";
+import GoldStar from "../GoldStar";
 
 export function Experience() {
   const [selectedItem, setSelectedItem] = useState<number>(0);
@@ -20,6 +22,9 @@ export function Experience() {
       setSelectedExperience(propylonExperience);
     }
 
+    if (item === "Software Engineer II") {
+      setSelectedExperience(propylonMidlevelExperience);
+    }
     if (item === "Cloud Computing Level 8") {
       setSelectedExperience(cloudComputingExperience);
     }
@@ -55,7 +60,11 @@ export function Experience() {
                   selectedItem === index ? "text-blue-500" : "text-white"
                 }`}
               >
-                <h1 className="mb-2 text-2xl font-medium">{item.title}</h1>
+                <h1 className="mb-2 flex items-center text-2xl font-medium">
+                  <span className="mr-1">{item.title}</span>
+                  {item.award && <GoldStar />}
+                </h1>
+
                 <p className="font-light">{item.role}</p>
               </li>
             ))}

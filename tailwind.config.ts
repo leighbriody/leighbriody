@@ -21,6 +21,7 @@ export default {
         accentyellow: "#FEDD49",
         fungray: "#7b89a8",
         funpink: "#00c7ff",
+        gold: "#FFD700",
       },
       spacing: {
         130: "27rem",
