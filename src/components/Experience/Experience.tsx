@@ -13,8 +13,9 @@ import GoldStar from "../GoldStar";
 
 export function Experience() {
   const [selectedItem, setSelectedItem] = useState<number>(0);
-  const [selectedExperience, setSelectedExperience] =
-    useState<ExperienceItem>(propylonExperience);
+  const [selectedExperience, setSelectedExperience] = useState<ExperienceItem>(
+    propylonMidlevelExperience
+  );
 
   const handleItemClick = (index: number, item: string) => {
     setSelectedItem(index);
@@ -35,7 +36,7 @@ export function Experience() {
   };
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-8">
+    <div className="mx-auto max-w-screen-xl px-4 py-4">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
           <Image
@@ -51,6 +52,7 @@ export function Experience() {
           <h2 className="text-2xl font-light tracking-tight text-white">
             My Experience Is Always Growing.
           </h2>
+
           <ul className="mt-10 grid gap-y-10 border-l-4 border-blue-500 pl-4">
             {experienceData.map((item, index) => (
               <li

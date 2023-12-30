@@ -60,7 +60,7 @@ export const cloudComputingExperience: ExperienceItem = {
 
 export const computerScienceExperience: ExperienceItem = {
   title: "Computer Science @ DKIT",
-  dates: "Aug 2022 - Current",
+  dates: "Sep 2018 - May 2021",
   bulletPoints: [
     "Degree: BSC In Computing (QQ1 Level 7)",
     "Result: Graduated with a second-class honors.",

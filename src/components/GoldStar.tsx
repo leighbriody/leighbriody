@@ -8,7 +8,7 @@ export default function GoldStar() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-6 w-6 fill-gold  text-gold"
+      className="mr-2 h-6 w-6  fill-gold text-gold"
     >
       <path
         strokeLinecap="round"

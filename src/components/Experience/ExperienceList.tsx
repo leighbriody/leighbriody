@@ -21,11 +21,28 @@ export function ExperienceList(experience: ExperienceListProps) {
         const [left, right] = item.split(":");
         return (
           <li key={index} className="list-item-style relative pl-4">
-            {experience.experience.award && index == 0 && <GoldStar />}
-            <p className="font-light">
-              <span className="text-white">{left}</span>:
-              <span className="text-gray-500">{right}</span>
-            </p>
+            <div className="grid grid-cols-6">
+              {experience.experience.award && index === 0 ? (
+                <>
+                  <div className="col-span-5">
+                    <p className="font-light">
+                      <span className="text-white">{left}</span>:
+                      <span className="text-gray-500">{right}</span>
+                    </p>
+                  </div>
+                  <div className="col-span-1">
+                    <GoldStar />
+                  </div>
+                </>
+              ) : (
+                <div className="col-span-6">
+                  <p className="font-light">
+                    <span className="text-white">{left}</span>:
+                    <span className="text-gray-500">{right}</span>
+                  </p>
+                </div>
+              )}
+            </div>
           </li>
         );
       })}

@@ -1,34 +1,12 @@
 import { SkillCard } from "./SkillCard/SkillCard";
-import Image from "next/image";
-import planet1 from "../../public/planet1.png";
+import { SkillsetHero } from "./SkillsetHero";
 
 export function SkillsetGrid() {
   return (
     <div className="skillset-banner py-20">
       <div className="banner-inner">
-        <section>
-          <div className="mx-auto grid max-w-screen-xl grid-cols-2 px-4 py-8">
-            <div className="max-w-screen-lg text-white">
-              <h2 className="mb-4 text-4xl tracking-tight text-white">
-                Skillset
-              </h2>
-            </div>
-            <div>
-              <Image
-                src={planet1}
-                width={50}
-                height={50}
-                alt="planet"
-                className="float-right"
-              ></Image>
-            </div>
-            <div className="col-span-2">
-              <h2 className="text-2xl font-light tracking-tight text-white">
-                Some of the technologies I build with.
-              </h2>
-            </div>
-          </div>
-        </section>
+        <SkillsetHero />
+
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-4 lg:py-6">
             <div className="max-w-screen-xl">
