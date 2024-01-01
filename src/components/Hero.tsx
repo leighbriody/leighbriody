@@ -1,6 +1,8 @@
 import spaceman from "../../public/hero-hero.png";
 import Image from "next/image";
 import { SpaceButton } from "./SpaceButton/SpaceButton";
+import { Github } from "./Github/Github";
+import GoldStar from "./GoldStar";
 
 interface MyComponentProps {
   onClick: () => void;
