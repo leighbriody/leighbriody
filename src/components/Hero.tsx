@@ -1,8 +1,8 @@
 import spaceman from "../../public/hero-hero.png";
+import spaceman2 from "../../public/spaceman2.png";
+
 import Image from "next/image";
 import { SpaceButton } from "./SpaceButton/SpaceButton";
-import { Github } from "./Github/Github";
-import GoldStar from "./GoldStar";
 
 interface MyComponentProps {
   onClick: () => void;
@@ -197,7 +197,7 @@ export function Hero({
           </div>
           <div className="float hidden lg:col-span-5 lg:mt-0 lg:flex">
             <Image
-              src={spaceman}
+              src={spaceman2}
               width={400}
               height={400}
               alt="Picture of the author"
