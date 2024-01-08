@@ -4,6 +4,7 @@ import { ProjectsGrid } from "~/components/Projects/ProjectsGrid";
 import { ProjectsHero } from "~/components/Projects/ProjectsHero";
 import { SkillsetGrid } from "~/components/SkillsetGrid";
 import { useRef } from "react";
+import Contact from "~/components/Contact/Contact";
 
 export default function Home() {
   const el = useRef<null | HTMLDivElement>(null);
@@ -45,6 +46,7 @@ export default function Home() {
       <div ref={experience}>
         <Experience></Experience>
       </div>
+      <Contact />
     </>
   );
 }
