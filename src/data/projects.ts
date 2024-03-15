@@ -6,6 +6,7 @@ export interface ExperienceItem {
 }
 
 export const experienceData = [
+  { title: "Software Engineer", role: "Udemy", award: false },
   { title: "Software Engineer II", role: "Propylon", award: true },
 
   { title: "Associate Software Engineer", role: "Propylon" },
@@ -16,9 +17,21 @@ export const experienceData = [
   { title: "Computer Science", role: "Dundalk Institute of Technology" },
 ];
 
+export const udemyExpericne: ExperienceItem = {
+  title: "Software Engineer @ Udemy",
+  dates: "Feb 2024 - Current",
+  bulletPoints: [
+    "Company-wide Recognition: Received the Quality Award, one of the five annual awards, for outstanding performance in quality across the organization.",
+    "Technical Leadership : Provide technical leadership within the team, offering guidance and mentoring to junior engineers, helping them grow their skills and contributing to the overall team's success.",
+    "Project Ownership : Successfully managed project timelines, resources, and deliverables, meeting or exceeding targets consistently.",
+    "Job Application Reviews : Conducted comprehensive reviews of job applications for the position of Full Stack Engineer to assist management in identifying the ideal candidate.",
+  ],
+  award: true,
+};
+
 export const propylonMidlevelExperience: ExperienceItem = {
   title: "Software Engineer II @ Propylon",
-  dates: "Oct 2023 - Current",
+  dates: "Oct 2023 - Jan 2024",
   bulletPoints: [
     "Company-wide Recognition: Received the Quality Award, one of the five annual awards, for outstanding performance in quality across the organization.",
     "Technical Leadership : Provide technical leadership within the team, offering guidance and mentoring to junior engineers, helping them grow their skills and contributing to the overall team's success.",

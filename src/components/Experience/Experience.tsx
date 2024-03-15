@@ -8,17 +8,22 @@ import {
   type ExperienceItem,
   propylonExperience,
   experienceData,
+  udemyExpericne,
 } from "~/data/projects";
 import GoldStar from "../GoldStar";
 
 export function Experience() {
   const [selectedItem, setSelectedItem] = useState<number>(0);
-  const [selectedExperience, setSelectedExperience] = useState<ExperienceItem>(
-    propylonMidlevelExperience
-  );
+  const [selectedExperience, setSelectedExperience] =
+    useState<ExperienceItem>(udemyExpericne);
 
   const handleItemClick = (index: number, item: string) => {
     setSelectedItem(index);
+
+    if (item === "Software Engineer") {
+      setSelectedExperience(udemyExpericne);
+    }
+
     if (item === "Associate Software Engineer") {
       setSelectedExperience(propylonExperience);
     }
