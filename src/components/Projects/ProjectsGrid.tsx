@@ -21,11 +21,7 @@ export function ProjectsGrid() {
           </>
         ))}
       </div>
-      <div className="mt-10 text-center">
-        <h1 onClick={handleClick}>
-          Pssst.. you can view more less impresive projects here
-        </h1>
-      </div>
+      <div className="mt-10 text-center"></div>
     </div>
   );
 }

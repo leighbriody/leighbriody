@@ -21,12 +21,11 @@ export const udemyExpericne: ExperienceItem = {
   title: "Software Engineer @ Udemy",
   dates: "Feb 2024 - Current",
   bulletPoints: [
-    "Company-wide Recognition: Received the Quality Award, one of the five annual awards, for outstanding performance in quality across the organization.",
-    "Technical Leadership : Provide technical leadership within the team, offering guidance and mentoring to junior engineers, helping them grow their skills and contributing to the overall team's success.",
-    "Project Ownership : Successfully managed project timelines, resources, and deliverables, meeting or exceeding targets consistently.",
-    "Job Application Reviews : Conducted comprehensive reviews of job applications for the position of Full Stack Engineer to assist management in identifying the ideal candidate.",
+    "Developed scalable and resilient microservices using Spring & Kotlin.",
+    "Employed Protocol Buffers (protobufs) for efficient serialization of data structures, optimizing communication between microservices and reducing network overhead.",
+    "Implemented remote procedure calls (RPC) using gRPC framework to enable high-performance and language-agnostic communication between microservices.",
   ],
-  award: true,
+  award: false,
 };
 
 export const propylonMidlevelExperience: ExperienceItem = {
