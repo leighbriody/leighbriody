@@ -99,23 +99,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    imageUrl: "/project-images/green-paws2.png",
-    projectName: "Green Paw's",
-    projectDescription: "Locate dog waste disposal bins near you",
-    projectLiveUrl: "https://dog-waste-disposal-map.vercel.app/home",
-    projectGithubUrl: "https://github.com/leighbriody/dog-waste-disposal-map",
-    projectTechStack: [
-      "Next.js",
-      "TypeScript",
-      "Prisma",
-      "Tailwind CSS",
-      "NextAuth.js",
-      "Stripe",
-      "Shadcn UI",
-      "Google Maps API",
-    ],
-  },
-  {
     imageUrl: "/project-images/simple-saas.png",
     projectName: "Simple SaaS",
     projectDescription:
@@ -131,6 +114,22 @@ export const projects: Project[] = [
       "Stripe",
       "Daisy UI",
       "Preline UI",
+    ],
+  },
+  {
+    imageUrl: "/project-images/green-paws2.png",
+    projectName: "Green Paw's",
+    projectDescription: "Locate dog waste disposal bins near you",
+    projectLiveUrl: "https://dog-waste-disposal-map.vercel.app/home",
+    projectGithubUrl: "https://github.com/leighbriody/dog-waste-disposal-map",
+    projectTechStack: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "Shadcn UI",
+      "Google Maps API",
     ],
   },
   {
