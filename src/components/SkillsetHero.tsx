@@ -11,7 +11,7 @@ export function SkillsetHero() {
         <div></div>
         <div className="col-span-2">
           <h2 className=" text-2xl font-light tracking-tight text-white">
-            Some of my skils include
+            Some of my skills include
           </h2>
         </div>
 
