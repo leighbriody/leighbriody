@@ -11,7 +11,7 @@ export const experienceData = [
 
   { title: "Associate Software Engineer", role: "Propylon" },
   {
-    title: "Cloud Computing Level 8",
+    title: "Cloud Computing",
     role: "Dundalk Institute of Technology",
   },
   { title: "Computer Science", role: "Dundalk Institute of Technology" },
@@ -24,6 +24,7 @@ export const udemyExpericne: ExperienceItem = {
     "Developed scalable and resilient microservices using Spring & Kotlin.",
     "Employed Protocol Buffers (protobufs) for efficient serialization of data structures, optimizing communication between microservices and reducing network overhead.",
     "Implemented remote procedure calls (RPC) using gRPC framework to enable high-performance and language-agnostic communication between microservices.",
+    "Currently learning more great things !",
   ],
   award: false,
 };
