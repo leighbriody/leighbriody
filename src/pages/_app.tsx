@@ -4,6 +4,7 @@ import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import { useEffect } from "react";
+import PlausibleProvider from "next-plausible";
 ("use client;");
 
 import { Be_Vietnam_Pro } from "next/font/google";
@@ -25,11 +26,15 @@ const MyApp: AppType<{ session: Session | null }> = ({
     import("preline");
   }, []);
   return (
-    <main className={`${vietnam.variable} bg-primary font-sans  text-blue-300`}>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
-    </main>
+    <PlausibleProvider domain="leighbriody.dev">
+      <main
+        className={`${vietnam.variable} bg-primary font-sans  text-blue-300`}
+      >
+        <SessionProvider session={session}>
+          <Component {...pageProps} />
+        </SessionProvider>
+      </main>
+    </PlausibleProvider>
   );
 };
 
