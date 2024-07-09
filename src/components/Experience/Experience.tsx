@@ -18,6 +18,7 @@ export function Experience() {
     useState<ExperienceItem>(udemyExpericne);
 
   const handleItemClick = (index: number, item: string) => {
+    console.log(item);
     setSelectedItem(index);
 
     if (item === "Software Engineer") {
@@ -31,7 +32,7 @@ export function Experience() {
     if (item === "Software Engineer II") {
       setSelectedExperience(propylonMidlevelExperience);
     }
-    if (item === "Cloud Computing Level 8") {
+    if (item === "Cloud Computing") {
       setSelectedExperience(cloudComputingExperience);
     }
 

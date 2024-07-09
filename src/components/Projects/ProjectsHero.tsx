@@ -7,10 +7,14 @@ export function ProjectsHero() {
         </div>
         <div></div>
         <div className="col-span-2">
-          <h2 className=" text-2xl font-light tracking-tight text-white">
-            Currently on a journey to create a profitable SaaS ..
+          <h2 className="text-2xl font-light tracking-tight text-white">
+            Currently on a journey to build a profitable SaaS 🚀
+          </h2>
+          <h2 className="mt-4 text-xl font-medium text-white">
+            Here are some of my latest projects/MVPs
           </h2>
         </div>
+
         <div className="mt-4 h-2 w-full bg-secondary"></div>
       </div>
     </section>
