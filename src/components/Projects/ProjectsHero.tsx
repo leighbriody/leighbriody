@@ -8,7 +8,7 @@ export function ProjectsHero() {
         <div></div>
         <div className="col-span-2">
           <h2 className=" text-2xl font-light tracking-tight text-white">
-            Take a look at some of my favourite projects..
+            Currently on a journey to create a profitable SaaS ..
           </h2>
         </div>
         <div className="mt-4 h-2 w-full bg-secondary"></div>

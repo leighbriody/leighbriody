@@ -22,9 +22,11 @@ export const udemyExpericne: ExperienceItem = {
   dates: "Feb 2024 - Current",
   bulletPoints: [
     "Developed scalable and resilient microservices using Spring & Kotlin.",
-    "Employed Protocol Buffers (protobufs) for efficient serialization of data structures, optimizing communication between microservices and reducing network overhead.",
-    "Implemented remote procedure calls (RPC) using gRPC framework to enable high-performance and language-agnostic communication between microservices.",
-    "Currently learning more great things !",
+    "Developed a microservice using Kotlin and Spring Framework to validate emails, enhancing email reliability across the site.",
+    "Assisted the migration from email and password authentication to a passwordless system using Django, React, Kotlin, Redis and Spring Framework.",
+    "Implemented new front end designes across all auth pages using React, creating reusable components to streamline development and maintain consistency.",
+    "Wrote unit and integration tests with Jest to ensure the reliability and performance of front-end components. !",
+    "Employed gRPC for efficient and high-performance communication between microservices, leveraging Protocol Buffers for optimized data serialization.",
   ],
   award: false,
 };
@@ -115,6 +117,23 @@ export const projects: Project[] = [
       "Stripe",
       "Daisy UI",
       "Preline UI",
+    ],
+  },
+  {
+    imageUrl: "/project-images/problembay.png",
+    projectName: "Problem Bay",
+    projectDescription:
+      "Online platform to help bring together problems and solutions",
+    projectLiveUrl: "https://problem-base-webapp.vercel.app/",
+    projectGithubUrl: "",
+    projectTechStack: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Supabase",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "Shadcn UI",
     ],
   },
   {
