@@ -11,7 +11,7 @@ export function ProjectsHero() {
             Currently on a journey to build a profitable SaaS 🚀
           </h2>
           <h2 className="mt-4 text-xl font-medium text-white">
-            Here are some of my latest projects/MVPs
+            Here are some of my projects/MVPs
           </h2>
         </div>
 
