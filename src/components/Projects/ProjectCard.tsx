@@ -31,8 +31,9 @@ export function ProjectCard(project: ProjectProp) {
             {project.project.videoUrl && (
               <Video href={project.project.videoUrl}></Video>
             )}
-            <Github href={project.project.projectGithubUrl}></Github>
-
+            {project.project.projectGithubUrl && (
+              <Github href={project.project.projectGithubUrl}></Github>
+            )}
             <Launch name="Live" href={project.project.projectLiveUrl}></Launch>
           </div>
         </div>

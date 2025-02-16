@@ -95,12 +95,29 @@ export interface Project {
   projectName: string;
   projectDescription: string;
   projectLiveUrl: string;
-  projectGithubUrl: string;
+  projectGithubUrl?: string;
   projectTechStack: string[];
   videoUrl?: string;
 }
 
 export const projects: Project[] = [
+  {
+    imageUrl: "/project-images/improve_background.png",
+    projectName: "Improve Background",
+    projectDescription: "Make your product photos pop with no effort",
+    projectLiveUrl: "https://www.improvebackground.com/",
+    projectTechStack: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "Stripe",
+      "Shadcn UI",
+      "FastAPI",
+      "Vertex AI",
+    ],
+  },
   {
     imageUrl: "/project-images/simple-saas.png",
     projectName: "Simple SaaS",
@@ -125,7 +142,7 @@ export const projects: Project[] = [
     projectDescription:
       "Online platform to help bring together problems and solutions",
     projectLiveUrl: "https://problem-base-webapp.vercel.app/",
-    projectGithubUrl: "",
+    projectGithubUrl: "https://github.com/leighbriody/problem-base-webapp",
     projectTechStack: [
       "Next.js",
       "TypeScript",
