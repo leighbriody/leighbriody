@@ -7,7 +7,13 @@ interface SkillCardProps {
 export function SkillCard(prop:SkillCardProps) {
   return (
     <button className={styles.btn}>
-      <Image src={prop.image}height={500} width={250} alt="react" className="h-auto max-w-full rounded-lg"></Image>
+      <Image
+        src={prop.image}
+        height={500}
+        width={250}
+        alt={prop.image.replace(/^\//, "").replace(/\.[a-z]+$/i, "")}
+        className="h-auto max-w-full rounded-lg"
+      ></Image>
     </button>
   );
 }

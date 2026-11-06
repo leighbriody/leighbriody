@@ -9,37 +9,25 @@ import {
   propylonExperience,
   experienceData,
   udemyExpericne,
+  udemySeniorExperience,
 } from "~/data/projects";
 import GoldStar from "../GoldStar";
 
+// Same order as `experienceData`, so each list entry maps to its details by index.
+const experienceDetails: ExperienceItem[] = [
+  udemySeniorExperience,
+  udemyExpericne,
+  propylonMidlevelExperience,
+  propylonExperience,
+  cloudComputingExperience,
+  computerScienceExperience,
+];
+
 export function Experience() {
   const [selectedItem, setSelectedItem] = useState<number>(0);
-  const [selectedExperience, setSelectedExperience] =
-    useState<ExperienceItem>(udemyExpericne);
 
-  const handleItemClick = (index: number, item: string) => {
-    console.log(item);
-    setSelectedItem(index);
-
-    if (item === "Software Engineer") {
-      setSelectedExperience(udemyExpericne);
-    }
-
-    if (item === "Associate Software Engineer") {
-      setSelectedExperience(propylonExperience);
-    }
-
-    if (item === "Software Engineer II") {
-      setSelectedExperience(propylonMidlevelExperience);
-    }
-    if (item === "Cloud Computing") {
-      setSelectedExperience(cloudComputingExperience);
-    }
-
-    if (item === "Computer Science") {
-      setSelectedExperience(computerScienceExperience);
-    }
-  };
+  const selectedExperience =
+    experienceDetails[selectedItem] ?? udemySeniorExperience;
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-4">
@@ -63,8 +51,8 @@ export function Experience() {
             {experienceData.map((item, index) => (
               <li
                 key={index}
-                onClick={() => handleItemClick(index, item.title)}
-                className={`${
+                onClick={() => setSelectedItem(index)}
+                className={`cursor-pointer ${
                   selectedItem === index ? "text-blue-500" : "text-white"
                 }`}
               >

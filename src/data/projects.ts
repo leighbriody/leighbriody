@@ -6,9 +6,9 @@ export interface ExperienceItem {
 }
 
 export const experienceData = [
+  { title: "Senior Software Engineer", role: "Udemy", award: false },
   { title: "Software Engineer", role: "Udemy", award: false },
-  { title: "Software Engineer II", role: "Propylon", award: true },
-
+  { title: "Software Engineer", role: "Propylon", award: true },
   { title: "Associate Software Engineer", role: "Propylon" },
   {
     title: "Cloud Computing",
@@ -17,23 +17,34 @@ export const experienceData = [
   { title: "Computer Science", role: "Dundalk Institute of Technology" },
 ];
 
+export const udemySeniorExperience: ExperienceItem = {
+  title: "Senior Software Engineer @ Udemy",
+  dates: "Dec 2025 - Current",
+  bulletPoints: [
+    "SSO Migration: Led the migration of ~3,000 enterprise organisations from PingOne to open-source Polis, finishing ahead of the contract deadline with 87% self-serve reconfiguration success.",
+    "SSO Infrastructure: Built a custom Polis deployment to resolve upstream bugs and speed up security patches, supporting 3.6M SSO logins a year.",
+    "Micro-frontends: Leading the migration of passwordless authentication from a React 17 monolith to a React 19 micro-frontend, enabling independent deployments.",
+    "Mentoring: Mentor junior engineers, break down and delegate work, and contribute to on-call and incident reviews.",
+  ],
+  award: false,
+};
+
 export const udemyExpericne: ExperienceItem = {
   title: "Software Engineer @ Udemy",
-  dates: "Feb 2024 - Current",
+  dates: "Feb 2024 - Dec 2025",
   bulletPoints: [
-    "Developed scalable and resilient microservices using Spring & Kotlin.",
-    "Developed a microservice using Kotlin and Spring Framework to validate emails, enhancing email reliability across the site.",
-    "Assisted the migration from email and password authentication to a passwordless system using Django, React, Kotlin, Redis and Spring Framework.",
-    "Implemented new front end designes across all auth pages using React, creating reusable components to streamline development and maintain consistency.",
-    "Wrote unit and integration tests with Jest to ensure the reliability and performance of front-end components. !",
-    "Employed gRPC for efficient and high-performance communication between microservices, leveraging Protocol Buffers for optimized data serialization.",
+    "Architecture: Evaluated monolith and micro-frontend approaches for the MCP OAuth consent page, shaped a staff-level decision, then built the micro-frontend independently.",
+    "Passwordless Auth: Delivered passwordless login and signup at scale with 22M+ logins and ~3M signups, owning implementation, experimentation and monitoring.",
+    "Email Verification: Designed and shipped a Kotlin and Spring service handling 12M+ requests and blocking 330K+ invalid signups and 10K+ invalid email changes.",
+    "SMS Authentication: Led SMS OTP authentication and a phone-number capture experiment, from proposal to production in about one sprint.",
+    "Observability: Co-led a monitoring overhaul that reduced alert events by 90% and warnings by 92%.",
   ],
   award: false,
 };
 
 export const propylonMidlevelExperience: ExperienceItem = {
-  title: "Software Engineer II @ Propylon",
-  dates: "Oct 2023 - Jan 2024",
+  title: "Software Engineer @ Propylon",
+  dates: "Oct 2023 - Feb 2024",
   bulletPoints: [
     "Company-wide Recognition: Received the Quality Award, one of the five annual awards, for outstanding performance in quality across the organization.",
     "Technical Leadership : Provide technical leadership within the team, offering guidance and mentoring to junior engineers, helping them grow their skills and contributing to the overall team's success.",
@@ -58,10 +69,10 @@ export const propylonExperience: ExperienceItem = {
 };
 
 export const cloudComputingExperience: ExperienceItem = {
-  title: "Cloud Computong @ DKIT",
+  title: "Cloud Computing @ DkIT",
   dates: "Sep 2021 - May 2022",
   bulletPoints: [
-    "Desgree: BSC (Hons) In Cloud Computing (QQ1 Level 8)",
+    "Degree: BSc (Hons) in Cloud Computing (QQI Level 8)",
     "Result: Graduated with first-class honors.",
     "AWS: Developed expertise in Cloud Architecture, AWS, and service-oriented architecture, enabling the design and implementation of scalable cloud solutions.",
     "Mobile Dev: Gained proficiency in Mobile Development and Angular, leading to the creation of responsive and interactive web applications.",
@@ -74,10 +85,10 @@ export const cloudComputingExperience: ExperienceItem = {
 };
 
 export const computerScienceExperience: ExperienceItem = {
-  title: "Computer Science @ DKIT",
+  title: "Computer Science @ DkIT",
   dates: "Sep 2018 - May 2021",
   bulletPoints: [
-    "Degree: BSC In Computing (QQ1 Level 7)",
+    "Degree: BSc in Computing (QQI Level 7)",
     "Result: Graduated with a second-class honors.",
     "OOP & Design Patterns: Developed a solid understanding of Object-Oriented Programming principles and design patterns.",
     "Web Development: Explored various web design patterns used in web development to create scalable and efficient applications.",
@@ -191,7 +202,7 @@ export const projects: Project[] = [
     imageUrl: "/project-images/walkies.png",
     projectName: "Walkies",
     projectDescription:
-      "Hybird On Demand Dog Walking Application - Find A Friendly Dog Walker Nearby",
+      "Hybrid on-demand dog walking app. Find a friendly dog walker nearby.",
     projectLiveUrl: "https://testwalkies.web.app/landing-page",
     projectGithubUrl:
       "https://github.com/leighbriody/on-demand-dog-walking-app",
