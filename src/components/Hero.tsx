@@ -115,10 +115,9 @@ export function Hero({
             </h2>
 
             <p className="mb-6 max-w-2xl  text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Senior Software Engineer building authentication systems used by
-              millions of users. I care about intuitive, user-centred
-              experiences and building full stack software that solves real
-              user problems.
+              Senior Software Engineer building and scaling authentication
+              systems. I care about intuitive, user-centred experiences and
+              building full stack software that solves real user problems.
             </p>
 
             <a
