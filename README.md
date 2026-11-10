@@ -1,37 +1,30 @@
 # Leigh Briody
 
-I build small products and put them in front of people. Senior Software Engineer at
-Udemy by day, working on authentication — passwordless login and enterprise SSO at
-scale. Ireland. Mostly Next.js, TypeScript and Postgres.
+I love building things. Usually small, usually in the evenings.
 
-### Building now
+Next.js, TypeScript and Postgres, for the most part.
 
-**Liftmaxxing** — a lifting tracker I actually use, every session. Targets come from
-double progression against your last logged set, never from a stored plan. Logging is
-one-handed on a phone, it installs as a PWA, and Claude can read and write the day's
-totals over an MCP connector. Mid-way through going from single-user to multi-user.
-Repo's private while that lands.
+### What I'm on at the moment
 
-### Shipped
+A lifting tracker for myself. It works out what I should be lifting next from
+whatever I did last time, and I use it on my phone in the gym. Still private
+while I tidy it up.
 
-- **[Problem Bay](https://problem-base-webapp.vercel.app/)** — platform for bringing
-  problems and the people who'd solve them together ·
-  [repo](https://github.com/leighbriody/problem-base-webapp)
-- **[Green Paws](https://dog-waste-disposal-map.vercel.app/home)** — locate dog waste
-  bins near you, on a map ·
-  [repo](https://github.com/leighbriody/dog-waste-disposal-map)
-- **[Evening Solitude](https://stoic-journal-rose.vercel.app)** — a nightly journal
-  that opens with a stoic quote and asks you to walk before you write ·
-  [repo](https://github.com/leighbriody/stoic-journal)
-- **[react-github-activity-grid](https://www.npmjs.com/package/react-github-activity-grid)**
-  — React component for rendering a GitHub contribution grid ·
-  [repo](https://github.com/leighbriody/react-github-activity-grid)
+### Bits that are public
+
+- [Problem Bay](https://problem-base-webapp.vercel.app/) — post a problem, find
+  someone who fancies solving it
+- [Green Paws](https://dog-waste-disposal-map.vercel.app/home) — a map of dog
+  waste bins
+- [Evening Solitude](https://stoic-journal-rose.vercel.app) — a journal that
+  hands you a stoic quote and tells you to go for a walk before you write
+  anything
+- [react-github-activity-grid](https://www.npmjs.com/package/react-github-activity-grid)
+  — a GitHub contribution grid you can drop into React
 
 ### Elsewhere
 
-- [leighbriody.dev](https://www.leighbriody.dev) — portfolio and work history
-- [leighbriody.ie](https://www.leighbriody.ie) — freelance web development for
-  businesses around Drogheda and Louth
-- [LinkedIn](https://linkedin.com/in/leighbrio) · lbriody10@gmail.com
+[leighbriody.ie](https://www.leighbriody.ie) is where I build websites for
+businesses around Drogheda. Otherwise lbriody10@gmail.com.
 
-<sub>Away from the keyboard: snooker, and a lot of music.</sub>
+<sub>Away from all this I play snooker and listen to far too much music.</sub>
