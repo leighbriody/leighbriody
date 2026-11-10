@@ -10,7 +10,7 @@ A lifting tracker for myself. It works out what I should be lifting next from
 whatever I did last time, and I use it on my phone in the gym. Still private
 while I tidy it up.
 
-### Bits that are public
+### Some fun builds
 
 - [Problem Bay](https://problem-base-webapp.vercel.app/) — post a problem, find
   someone who fancies solving it
